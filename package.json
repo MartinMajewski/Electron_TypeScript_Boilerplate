@@ -1,7 +1,7 @@
 {
-  "name": "capliper_angular2_vsc",
+  "name": "Electron TypeScript App",
   "version": "1.0.0",
-  "description": "Master Thesis App",
+  "description": "This is a working workspace for an minimal Electron App written entirely in TypeScript 2.0 ES6 without any vanilla JS code.",
   "main": "App.ts",
   "scripts": {
     "electronRebuild": "electron-rebuild",
@@ -15,8 +15,7 @@
     "url": "./.git"
   },
   "keywords": [
-    "Master",
-    "Thesis"
+
   ],
   "author": "Martin Majewski",
   "license": "MIT",
