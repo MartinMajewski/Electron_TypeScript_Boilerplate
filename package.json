@@ -1,0 +1,39 @@
+{
+  "name": "capliper_angular2_vsc",
+  "version": "1.0.0",
+  "description": "Master Thesis App",
+  "main": "App.ts",
+  "scripts": {
+    "electronRebuild": "electron-rebuild",
+    "electron": "electron ./build/App.js",
+    "copyHTML": "copyfiles -u 1 './src/**/*.html' './build/'",
+    "start": "concurrently --raw     \"copyfiles -u 1 './src/**/*.html' './build/'\"      \"electron ./build/App.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "./.git"
+  },
+  "keywords": [
+    "Master",
+    "Thesis"
+  ],
+  "author": "Martin Majewski",
+  "license": "MIT",
+    "dependencies": {
+    "electron": "^1.4.12",
+    "serialport": "^4.0.7"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.4.29",
+    "@types/node": "^6.0.52",
+    "@types/serialport": "^4.0.6",
+    "concurrently": "^3.1.0",
+    "copyfiles": "^1.0.0",
+    "electron-rebuild": "^1.4.0",
+    "glob": "^7.1.1",
+    "gulp": "^3.9.1",
+    "tslint": "^4.0.2",
+    "typescript": "^2.1.4"
+  }
+}

@@ -1,0 +1,13 @@
+{
+	"rules": {
+		"object-literal-shorthand": true,
+		"no-unused-expression": true,
+		"no-duplicate-variable": true,
+		"no-duplicate-key": true,
+		"no-unused-variable": true,
+		"curly": true,
+		"class-name": true,
+		"semicolon": ["never","ignore-bound-class-methods","ignore-interfaces"],
+		"triple-equals": true
+	}
+}
