@@ -1,5 +1,5 @@
 {
-  "name": "Electron TypeScript App",
+  "name": "electron_typescript_app",
   "version": "1.0.0",
   "description": "This is a working workspace for an minimal Electron App written entirely in TypeScript 2.0 ES6 without any vanilla JS code.",
   "main": "App.ts",
