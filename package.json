@@ -8,8 +8,7 @@
     "transpile-ts-files": "tsc",
     "start-electron-app": "electron ./build/App.js",
     "copyHTML": "copyfiles -u 1 './src/**/*.html' './build/'",
-    "start": "concurrently --raw   \"npm run copyHTML\"      \"npm run start-electron-app\" ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently --raw   \"npm run copyHTML\"      \"npm run start-electron-app\" "
   },
   "repository": {
     "type": "git",
