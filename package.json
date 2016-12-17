@@ -5,23 +5,32 @@
   "main": "App.ts",
   "scripts": {
     "electronRebuild": "electron-rebuild",
-    "electron": "electron ./build/App.js",
+    "transpile-ts-files": "tsc",
+    "start-electron-app": "electron ./build/App.js",
     "copyHTML": "copyfiles -u 1 './src/**/*.html' './build/'",
-    "start": "concurrently --raw     \"copyfiles -u 1 './src/**/*.html' './build/'\"      \"electron ./build/App.js\"",
+    "start": "concurrently --raw   \"npm run copyHTML\"      \"npm run start-electron-app\" ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "./.git"
   },
-  "keywords": [
-
-  ],
+  "keywords": [],
   "author": "Martin Majewski",
   "license": "MIT",
-    "dependencies": {
+  "dependencies": {
+    "@angular/common": "~2.3.1",
+    "@angular/compiler": "~2.3.1",
+    "@angular/core": "^2.3.1",
+    "@angular/forms": "~2.3.1",
+    "@angular/http": "^2.3.1",
+    "@angular/platform-browser": "~2.3.1",
+    "@angular/platform-browser-dynamic": "~2.3.1",
+    "@angular/router": "^3.3.1",
     "electron": "^1.4.12",
-    "serialport": "^4.0.7"
+    "rxjs": "^5.0.0-rc.4",
+    "serialport": "^4.0.7",
+    "zone.js": "^0.7.2"
   },
   "devDependencies": {
     "@types/electron": "^1.4.29",
@@ -31,7 +40,7 @@
     "copyfiles": "^1.0.0",
     "electron-rebuild": "^1.4.0",
     "glob": "^7.1.1",
-    "gulp": "^3.9.1",
+    "minimatch": "^3.0.3",
     "tslint": "^4.0.2",
     "typescript": "^2.1.4"
   }
